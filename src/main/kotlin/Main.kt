@@ -17,8 +17,15 @@ fun main(args: Array<String>) {
     var descontoInteira = (ingresso * 30)/100
 
     if(quantIngresso >= 2){
-        println("Desconto de 30% no valor de cada ingresso R$$descontoInteira: " +
-                "R$${ingresso - descontoInteira} por ingresso")
+        println("30% de desconto em cada ingresso R$$descontoInteira: " +
+                "Ingresso R$${ingresso - descontoInteira}")
     }else
         println("O valor do ingresso é R$$ingresso")
+
+    if (quantIngresso > 1) {
+        var somaIngresso = (ingresso - descontoInteira) * quantIngresso
+        println("O valor total dos ingressos é: R$$somaIngresso")
+    }else {
+        println("Você pagará o valor da inteira no seu ingresso R$$ingresso")
+    }
 }
