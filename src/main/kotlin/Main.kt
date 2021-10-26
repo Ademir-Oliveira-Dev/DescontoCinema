@@ -6,7 +6,7 @@ fun main(args: Array<String>) {
     var desconto1 = (ingresso * 60)/100
     var desconto2 = (ingresso * 55)/100
 
-    if (idade >= 0 && idade < 5){
+    if (idade < 5){
         println("60% de desconto no ingresso R$$desconto1: Ingresso R$${ingresso - desconto1}")
     }else if (idade > 60){
         println("55% de desconto no ingresso R$$desconto2: Ingresso R$${ingresso - desconto2}")
